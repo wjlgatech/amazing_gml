@@ -1,7 +1,7 @@
 # Graph Machine Learning Resource
 
 **Credits & References**
-- [Nikiter Iserson](https://www.linkedin.com/in/nikita-iserson/)'s [Linkedin blogpost](https://www.linkedin.com/feed/update/urn:li:activity:6997487239664410624/)
+- [Nikiter Iserson](https://www.linkedin.com/in/nikita-iserson/)'s [Linkedin blogpost 1](https://www.linkedin.com/feed/update/urn:li:activity:6997487239664410624/), [Linkedin blogpost 2](https://www.linkedin.com/posts/nikita-iserson_graph-knowledgegraph-graphneuralnetworks-activity-7033072096427573248-SXoa?utm_source=share&utm_medium=member_desktop)
 
 ## Graph ML Intro
 
@@ -44,6 +44,94 @@ https://www.chaitjo.com/post/deep-learning-for-routing-problems/
 
 GNN for RecSys:
 https://github.com/tsinghua-fib-lab/GNN-Recommender-Systems
+
+## Application of Graph ML in Causal Feature Selection, Graph Discovery & Counterfactuals and Explainability❔📊
+Nikita's practical guide:
+
+🔷 Causal and Semantic Feature Selection
+
+🔹 Systems have many dependencies (sensors, journeys, facts)
+🔹 ML is difficult to apply for high-dimensional spaces
+🔹 FS eliminates spurious correlations
+to prevent overfitting
+🔹 Domain knowledge has known dependencies between steps
+🔹 Adding domain knowledge improves performance and xAI
+🔹 Example: Feature Interaction Constraints in XGBoost
+
+🔷 Causal Graph Discovery
+
+🔹 Causality could be described as structural causal model 
+🔹 Learning graph from samples is a combinatorial problem
+🔹 Usually real SCM partially observable
+🔹 GNN as universal approximators on structured input are quite suitable for causal learning
+
+🔷 Counterfactual and Causal Explanations with GNN
+
+🔹 Identify compact subgraph important for GNN prediction
+🔹 Counterfactuals xAI: "Alternate reality" in form of “If X had not occurred, Y would not have occurred”
+🔹 With GNNs, counterfactual explanation identifies a small subset of edges of the input graph
+🔹 Removing those edges significantly changes the prediction made by the GNN
+🔹 GNNs are multi-modal (text, geometric, image, genomic)
+🔹 GNNs integrate generative (auto-encoders) models for partially observable distribution, reinforced models (sequential feature attribution) and counterfactual graph losses
+
+
+## 🔷 Practical Topics - Causality
+
+👉 Causal Feature Selection
+
+Causal feature selection
+http://www.clopinet.com/isabelle/Papers/causalFS.pdf
+https://slideplayer.com/slide/12533305/
+https://www.researchgate.net/publication/309959852_Causality-Guided_Feature_Selection
+https://arxiv.org/pdf/1911.07147.pdf
+https://krvarshney.github.io/pubs/GalhotraSSV_sigmod2022.pdf
+
+👉 Semantic Feature Selection
+
+https://edoc.ub.uni-muenchen.de/25380/1/Ringsquandl_Martin.pdf
+https://pdfslide.net/data-analytics/iswc-15-semantic-guided-feature-selection.html?page=14
+https://www.biorxiv.org/content/biorxiv/early/2022/07/20/2022.07.18.500549.1.full.pdf
+https://www.biorxiv.org/content/10.1101/2022.07.18.500549v2.full
+
+👉 Causal Graph Discovery and Counterfactuals
+
+DAG-GNN: DAG Structure Learning with Graph Neural Networks
+https://arxiv.org/pdf/1904.10098.pdf
+https://www.benchcouncil.org/bench19/file/slides/paper13.pdf
+https://arxiv.org/pdf/2208.01529v1.pdf
+https://proceedings.mlr.press/v193/xu22a/xu22a.pdf
+https://irlab.science.uva.nl/wp-content/papercite-data/pdf/lucic-2021-cf-gnnexplainer-arxiv.pdf
+
+👉 Causality with Graph Neural Networks
+https://arxiv.org/abs/2110.14690
+https://arxiv.org/abs/2109.04173
+
+👉 Causal Feature Selection
+
+https://arxiv.org/abs/2005.03447
+https://www.sciencedirect.com/science/article/pii/S2095809922005641
+https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-022-01788-8
+https://www.sciencedirect.com/science/article/pii/S0378779621005186
+
+👉 Semantic Feature Selection
+
+https://ieeexplore.ieee.org/document/9359265
+https://dl.acm.org/doi/10.1145/3148011.3154473
+
+👉 Causal Graph Discovery and Counterfactuals
+
+https://arxiv.org/abs/2109.04173
+https://www.semanticscholar.org/reader/f7231aee1e18428d6c0b314b5e1e65d6707e8747
+https://www.semanticscholar.org/paper/Counterfactual-Graph-Learning-for-Link-Prediction-Zhao-Liu/6ea7a339f2b64f6b1853146fad36f78b0fc68865
+https://arxiv.org/pdf/2202.08816.pdf
+
+👉 Causal Explainability with Graph Neural Networks
+
+https://www.sciencedirect.com/science/article/pii/S1566253521000142
+https://arxiv.org/pdf/2204.11028.pdf
+https://arxiv.org/pdf/2209.14107.pdf
+https://arxiv.org/pdf/2104.06643.pdf
+https://arxiv.org/abs/2210.11695.pdf
 
 ## Future of GNNs
 
